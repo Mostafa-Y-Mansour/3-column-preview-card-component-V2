@@ -1,0 +1,153 @@
+/* Root Variables */
+:root {
+  --sedans-clr: hsl(31, 77%, 52%);
+  --suvs-clr: hsl(184, 100%, 22%);
+  --luxury-clr: hsl(179, 100%, 13%);
+  --h2-font: 'Big Shoulders Display', cursive;
+  --txt-font: 'Lexend Deca', sans-serif;
+  --main-clr: hsl(0, 0%, 95%);
+  --p-clr: hsla(0, 0%, 100%, 0.75);
+}
+
+/* general styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+}
+
+/* style */
+
+main {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@media (max-width: 480px) {
+  main {
+    height: 120vh;
+    flex-direction: column;
+    transform: translate(-50%, -35%);
+    -webkit-transform: translate(-50%, -35%);
+    -moz-transform: translate(-50%, -35%);
+    -ms-transform: translate(-50%, -35%);
+    -o-transform: translate(-50%, -35%);
+}
+}
+
+main > div {
+  width: 270px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 42px 45px;
+}
+
+.container {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sedans {
+  background-color: var(--sedans-clr);
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 480px) {
+  .sedans {
+    border-radius: 10px 10PX 0 0;
+    -webkit-border-radius: 10px 10PX 0 0;
+    -moz-border-radius: 10px 10PX 0 0;
+    -ms-border-radius: 10px 10PX 0 0;
+    -o-border-radius: 10px 10PX 0 0;
+}
+}
+
+.suvs {
+  background-color: var(--suvs-clr);
+}
+
+.luxury {
+  background-color: var(--luxury-clr);
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 480px) {
+  .luxury {
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+}
+
+.logo {
+  width: 60px;
+}
+
+h2 {
+  font-family: var(--h2-font);
+  font-weight: 700;
+  font-size: 2.4em;
+  color: var(--main-clr);
+  padding: 31px 0;
+}
+
+p {
+  font-family: var(--txt-font);
+  font-weight: 400;
+  font-size: 0.83em;
+  line-height: 1.7;
+  color: hsla(0, 0%, 100%, 0.65);
+}
+
+.sedans button {
+  color: var(--sedans-clr);
+}
+.suvs button {
+  color: var(--suvs-clr);
+}
+.luxury button {
+  color: var(--luxury-clr);
+}
+
+button {
+  width: 130px;
+  font-family: var(--txt-font);
+  font-weight: 400;
+  font-size: 0.9em;
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main-clr);
+}
